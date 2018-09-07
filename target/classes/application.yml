@@ -1,0 +1,19 @@
+# spring setting
+spring:
+      servlet:
+              multipart:
+                max-request-size: 100MB
+                max-file-size: 100MB
+      thymeleaf:
+        mode: HTML
+
+# logging setting
+logging:
+  file: simc.log
+  path: logs
+
+# server setting
+server:
+  compression:
+    enabled: true
+    min-response-size: 1

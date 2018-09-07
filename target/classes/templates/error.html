@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="zh-CN" xmlns:th="http://www.thymeleaf.org">
+<head th:include="header :: no-metas-header(~{::title},~{::link})">
+    <title>Error</title>
+    <!-- Custom CSS-->
+    <link rel="stylesheet" href="css/error.css" th:href="@{/css/error.css}"/>
+</head>
+<body>
+<!-- Begin page content -->
+<div class="container">
+    <div class="page-header">
+        <h1 th:text="${status}" class="text-center">500</h1>
+    </div>
+    <p th:text="${message}">Fake content</p>
+</div>
+
+<footer class="footer">
+    <div class="container">
+        &copy; Copyright <strong>昆明理工大学</strong>. All Rights Reserved
+    </div>
+</footer>
+</body>
+</html>

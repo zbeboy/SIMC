@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="zh-CN" xmlns:th="http://www.thymeleaf.org">
+<head th:include="header :: no-metas-header(~{::title},~{::link})">
+    <title th:text="仿真模拟系统-生命科学与技术学院"></title>
+
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css" th:href="@{/css/bootstrap-theme.min.css}">
+    <link rel="stylesheet" href="css/fontAwesome.css" th:href="@{/css/fontAwesome.css}">
+    <link rel="stylesheet" href="css/tooplate-style.css" th:href="@{/css/tooplate-style.css}">
+</head>
+<body>
+<section class="first-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="row">
+                    <div class="col-md-7 text-right">
+                        <img width="200px" height="200px" src="img/logo.png" th:src="@{/images/logo.png}"/>
+                    </div>
+                    <div class="col-md-5 text-left">
+                        <div class="text-content" style="padding-top:22px;">
+                            <h2>生命科学与技术学院</h2>
+                            <div class="line-dec"></div>
+                            <span>仿真模拟系统</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="second-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 col-sm-6">
+                <div class="service-item">
+                    <div class="icon">
+                        <img src="img/first-icon.png" alt="" th:src="@{/images/first-icon.png}">
+                    </div>
+                    <h4>Quick Editing</h4>
+                    <p>Aliquam ex velit, viverra eu tristique vel, rhoncus nec ligula. In vel massa sed dolor pharetra interdum vitae posuere.</p>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="service-item">
+                    <div class="icon">
+                        <img src="img/second-icon.png" alt="" th:src="@{/images/second-icon.png}">
+                    </div>
+                    <h4>Responsive Layout</h4>
+                    <p>Sed pulvinar ipsum id leo volutpat, in convallis lectus molestie. Aliquam nisi sapien, faucibus eu consequat id, egestas vitae augue.</p>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="service-item">
+                    <div class="icon">
+                        <img src="img/third-icon.png" alt="" th:src="@{/images/third-icon.png}">
+                    </div>
+                    <h4>Quick Support</h4>
+                    <p>Aliquam ex velit, viverra eu tristique vel, rhoncus nec ligula. In vel massa sed dolor pharetra interdum vitae posuere.</p>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="service-item">
+                    <div class="icon">
+                        <img src="img/fourth-icon.png" alt="" th:src="@{/images/fourth-icon.png}">
+                    </div>
+                    <h4>Voice Chat</h4>
+                    <p>Sed pulvinar ipsum id leo volutpat, in convallis lectus molestie. Aliquam nisi sapien, faucibus eu consequat id, egestas vitae augue.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <p>Copyright &copy; 2018 昆明理工大学
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="js/jquery-1.11.2.min.js" th:src="@{/js/jquery.min.js}"></script>
+
+<script src="js/bootstrap.min.js" th:src="@{/js/bootstrap.min.js}"></script>
+
+<script src="js/plugins.js" th:src="@{/js/plugins.js}"></script>
+<script src="js/main.js" th:src="@{/js/main.js}"></script>
+</body>
+</html>
